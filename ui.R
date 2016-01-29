@@ -21,8 +21,10 @@ shinyUI(pageWithSidebar(
   helpText("Note: Please input the driven distance (0-250000)of car you wish to find the price,
            once completed,  press Predict button."),
 
-  submitButton("Predict")
+  submitButton("Predict"),
   # Show a plot of the generated distribution
+  br(),
+  a(href = "https://github.com/WindZhang/DevelopingDataProducts", "The Shiny apps Source code")
   ),
   mainPanel(
    h4("Est Price of Your Car in K$"),
